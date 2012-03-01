@@ -1,3 +1,4 @@
+#ifndef NO_ASPELL
 
 #include "raspell.h"
 
@@ -725,4 +726,4 @@ void Init_aspell() {
     rb_define_method(cAspell, "suggestion_mode=", aspell_set_suggestion_mode, 1);
 }
 
-
+#endif
